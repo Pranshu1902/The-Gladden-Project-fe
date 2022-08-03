@@ -1,10 +1,14 @@
+import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 
 export default function Home() {
   return (
-    <div className="text-red-500 text-9xl bg-gray-800 min-h-screen">
+    <div>
       <Header />
-      <h1>The Social Dilemma</h1>
+      <div className="text-red-500 bg-[#1f262b] min-h-screen">
+        <p>Home</p>
+      </div>
+      <Footer />
     </div>
   );
 }
