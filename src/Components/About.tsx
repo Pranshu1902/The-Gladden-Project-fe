@@ -1,3 +1,4 @@
+import { Link } from "raviger";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 
@@ -7,50 +8,58 @@ export default function About() {
       <Header />
       <div className="text-red-500 bg-[#1f262b] min-h-screen">
         <div className="p-4">
-          <p className="text-7xl">About Us</p>
-          <div className="flex gap-6 justify-center flex-col md:flex-row p-4 mt-6">
-            <div className="flex justify-center items-center">
-              <img
-                src="https://avatars.githubusercontent.com/u/70687348?v=4"
-                alt=""
-                className="rounded-full"
-                width={"200"}
-              />
-            </div>
-            <div className="text-[#66fcf1]">
-              <p className="text-5xl font-bold">Pranshu Aggarwal</p>
-              <div className="flex gap-4 text-3xl pt-2">
-                <a
-                  href="https://github.com/Pranshu1902/"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <i className="fa-brands fa-github hover:animate-pulse hover:scale-110 transition duration-300"></i>
-                </a>
-                <a
-                  href="https://twitter.com/pranshu1902"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <i className="fa-brands fa-twitter hover:animate-pulse hover:scale-110 transition duration-300"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/pranshu-aggarwal-4aa8181b4/"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <i className="fa-brands fa-linkedin hover:animate-pulse hover:scale-110 transition duration-300"></i>
-                </a>
+          <p className="text-7xl text-gray-400">About Us</p>
+          <div className="flex justify-center w-full items-center">
+            <div className="flex gap-6 justify-center flex-col md:flex-row p-4 mt-6 w-full md:w-2/3">
+              <div className="flex justify-center items-center w-1/3">
+                <img
+                  src="https://avatars.githubusercontent.com/u/70687348?v=4"
+                  alt=""
+                  className="rounded-full border-2 border-[#66fcf1] p-2"
+                  width={"200"}
+                />
               </div>
-              <p className="text-xl">
-                Pranshu is a tech enthusiast and a self-taught programmer. He is
-                a full stack developer with a passion for learning and building
-                things to make the lives of people better. He also love to read
-                books. Feel free to connect!{" "}
-              </p>
+              <div className="text-[#66fcf1] w-2/3">
+                <p className="text-5xl font-bold">Pranshu Aggarwal</p>
+                <div className="flex gap-4 text-3xl pt-2">
+                  <a
+                    href="https://github.com/Pranshu1902/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-github hover:animate-pulse hover:scale-110 transition duration-300"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/pranshu1902"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-twitter hover:animate-pulse hover:scale-110 transition duration-300"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/pranshu-aggarwal-4aa8181b4/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-linkedin hover:animate-pulse hover:scale-110 transition duration-300"></i>
+                  </a>
+                </div>
+                <p className="text-xl">
+                  Pranshu is the founder and CEO of{" "}
+                  <Link className="text-red-500 hover:underline" href="/">
+                    {" "}
+                    The Gladden Project
+                  </Link>
+                  . He is also a tech enthusiast and a self-taught programmer.
+                  He is a full stack developer with a passion for learning and
+                  building things to make the lives of people better. He also
+                  love to read books. Feel free to connect!{" "}
+                </p>
+              </div>
             </div>
           </div>
-          <div className="mt-4">
+          {/* Mission */}
+          <div className="mt-12 text-white p-4 flex flex-col gap-4">
             <p className="text-5xl font-bold">Mission:</p>
             <p className="text-xl">
               Our mission is to elevate the standard of a human mind and make it

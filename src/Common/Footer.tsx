@@ -14,8 +14,8 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div>
-        <Link href="/about">About</Link>
+      <div className="flex justify-center items-center">
+        <Link href="/about">About us</Link>
       </div>
     </div>
   );
