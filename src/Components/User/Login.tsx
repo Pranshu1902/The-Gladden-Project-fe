@@ -3,7 +3,6 @@ import Footer from "../../Common/Footer";
 import Header from "../../Common/Header";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
-import CircularIntegration from "../../Common/Loader";
 import { Button } from "@mui/material";
 import { login } from "../../api/ApiUtils";
 import { Link, navigate } from "raviger";
@@ -60,14 +59,14 @@ export default function Login() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="bg-gray-100 rounded-lg p-2 shadow"
+              className="bg-gray-100 rounded-lg p-2 shadow text-black"
             />
             <p className="font-bold">Password:</p>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="bg-gray-100 rounded-lg p-2 shadow"
+              className="bg-gray-100 rounded-lg p-2 shadow text-black"
             />
           </div>
           {error.length > 0 && (

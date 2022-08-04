@@ -3,9 +3,8 @@ import Footer from "../../Common/Footer";
 import Header from "../../Common/Header";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
-import CircularIntegration from "../../Common/Loader";
 import { Button } from "@mui/material";
-import { login, signup } from "../../api/ApiUtils";
+import { signup } from "../../api/ApiUtils";
 import { navigate } from "raviger";
 
 export default function Signup() {

@@ -12,7 +12,6 @@ export default function Home() {
     <div>
       <Header />
       <div className="text-[#e84242] bg-[#1a1a1d] min-h-screen">
-        <p>Home</p>
         <div className="flex flex-col md:flex-row gap-8 justify-center w-full p-16">
           <div className="md:w-1/2 flex justify-end">
             <img src={socialMedia} width={400} alt="" />

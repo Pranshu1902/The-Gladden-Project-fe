@@ -60,3 +60,16 @@ export const signup = async (username: string, password: string) => {
   const data = { username: username, password: password };
   return request("POST", data, "user/");
 };
+
+export const getChats = async () => {
+  return request("GET", {}, "api/chats/");
+};
+
+export const sendChat = async (message: string) => {
+  const data = { text: message, type: "sent" };
+  return request("POST", data, "api/chats/");
+};
+
+export const deleteChat = async (id: number) => {
+  return request("DELETE", {}, `api/chats/${id}/`);
+};
