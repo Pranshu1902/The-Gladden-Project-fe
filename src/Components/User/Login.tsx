@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../../Common/Footer";
 import Header from "../../Common/Header";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import CircularIntegration from "../../Common/Loader";
 import { Button } from "@mui/material";
+import { login } from "../../api/ApiUtils";
+import { Link, navigate } from "raviger";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -12,19 +14,45 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: any) => {
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      navigate("/chat");
+    }
+
+    document.title = "Login | The Gladden Project";
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     setLoading(true);
+    setError("");
     e.preventDefault();
+    if (username.length === 0 || password.length === 0) {
+      setError("Please fill all the fields");
+      setLoading(false);
+    } else {
+      const data = await login(username, password);
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        setLoading(false);
+        navigate(`/chat`);
+      } else {
+        setError("Invalid login credentials");
+        setLoading(false);
+        setPassword("");
+      }
+    }
   };
 
   return (
     <div>
       <Header />
-      <div className="text-[#e84242] bg-[#1a1a1d] min-h-screen">
-        <p className="text-7xl font-bold flex justify-center pt-4">Login</p>
+      <div className="text-gray-500 min-h-screen">
+        <p className="text-7xl font-bold flex justify-center pt-4 text-black">
+          Login
+        </p>
         <form
           onSubmit={(e) => handleSubmit(e)}
-          className="pt-6 flex flex-col justify-center items-center"
+          className="pt-12 flex flex-col justify-center items-center"
         >
           <div className="flex flex-col gap-6">
             <p className="font-bold">Username:</p>
@@ -57,6 +85,7 @@ export default function Login() {
                 variant="contained"
                 className="cursor-pointer"
                 fullWidth
+                type="submit"
                 style={{ backgroundColor: "#FF0000", color: "#FFFFFF" }}
               >
                 Login
@@ -64,6 +93,12 @@ export default function Login() {
             )}
           </div>
         </form>
+        <p className="flex justify-center items-center">
+          New user?{" "}
+          <Link href="/signup" className="text-blue-500 hover:text-blue-700">
+            Signup
+          </Link>
+        </p>
       </div>
       <Footer />
     </div>
