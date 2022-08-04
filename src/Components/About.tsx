@@ -1,8 +1,13 @@
 import { Link } from "raviger";
+import { useEffect } from "react";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About | The Gladden Project";
+  });
+
   return (
     <div>
       <Header />
