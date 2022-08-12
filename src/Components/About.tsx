@@ -11,20 +11,20 @@ export default function About() {
   return (
     <div>
       <Header />
-      <div className="text-red-500 bg-[#1f262b] min-h-screen">
+      <div className="text-[#2EC4B6] bg-[#011627] min-h-screen">
         <div className="p-4">
-          <p className="text-7xl text-gray-400">About Us</p>
-          <div className="flex justify-center w-full items-center">
-            <div className="flex gap-6 justify-center flex-col md:flex-row p-4 mt-6 w-full md:w-2/3">
+          <p className="text-7xl text-white">About Us</p>
+          <div>
+            <div className="flex gap-6 justify-center flex-col md:flex-row p-4 mt-6 w-full">
               <div className="flex justify-center items-center w-1/3">
                 <img
                   src="https://avatars.githubusercontent.com/u/70687348?v=4"
                   alt=""
-                  className="rounded-full border-2 border-[#66fcf1] p-2"
+                  className="rounded-full border-2 border-[#FF3366] p-2"
                   width={"200"}
                 />
               </div>
-              <div className="text-[#66fcf1] w-2/3">
+              <div className="text-[#FF3366] w-2/3">
                 <p className="text-5xl font-bold">Pranshu Aggarwal</p>
                 <div className="flex gap-4 text-3xl pt-2">
                   <a
@@ -51,7 +51,7 @@ export default function About() {
                 </div>
                 <p className="text-xl">
                   Pranshu is the founder and CEO of{" "}
-                  <Link className="text-red-500 hover:underline" href="/">
+                  <Link className="text-[#2EC4B6] hover:underline" href="/">
                     {" "}
                     The Gladden Project
                   </Link>
@@ -64,7 +64,7 @@ export default function About() {
             </div>
           </div>
           {/* Mission */}
-          <div className="mt-12 text-white p-4 flex flex-col gap-4">
+          <div className="mt-12 p-4 flex flex-col gap-4">
             <p className="text-5xl font-bold">Mission:</p>
             <p className="text-xl">
               Our mission is to elevate the standard of a human mind and make it

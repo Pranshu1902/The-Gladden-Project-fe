@@ -8,10 +8,12 @@ export default function Home() {
     document.title = "The Gladden Project";
   }, []);
 
+  // https://coolors.co/011627-ff3366-2ec4b6
+
   return (
     <div>
       <Header />
-      <div className="text-[#e84242] bg-[#1a1a1d] min-h-screen">
+      <div className="text-[#FF3366] bg-[#011627] min-h-screen">
         <div className="flex flex-col md:flex-row gap-8 justify-center w-full p-16">
           <div className="md:w-1/2 flex justify-end">
             <img src={socialMedia} width={400} alt="" />

@@ -4,7 +4,7 @@ import logo from "../Images/logo.png";
 
 export default function Header() {
   return (
-    <div className="flex bg-[#000000] text-[#D22B2B] justify-between p-2">
+    <div className="flex bg-[#FF3366] text-[#011627] justify-between p-2">
       <div className="flex items-center">
         <Link href="/">
           <img src={logo} alt="logo" width={"80"} />
@@ -16,7 +16,7 @@ export default function Header() {
       <div className="flex justify-center items-center pr-2">
         <Button
           variant="outlined"
-          style={{ backgroundColor: "red", color: "white" }}
+          style={{ backgroundColor: "#2EC4B6", color: "white" }}
           onClick={() => {
             navigate("/chat");
           }}
