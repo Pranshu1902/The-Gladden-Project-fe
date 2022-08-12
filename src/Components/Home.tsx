@@ -32,7 +32,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/3 flex justify-start items-center text-[#2EC4B6]">
             <p className="text-5xl">
-              Are the comments on strangers on the internet controlling you?
+              Are the comments of strangers on the internet controlling you?
             </p>
           </div>
         </div>
