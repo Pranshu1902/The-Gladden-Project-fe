@@ -9,6 +9,13 @@ import Box from "@mui/material/Box";
 import moment from "moment";
 import { Button, TextField } from "@mui/material";
 import ConfirmDeleteChats from "./Modal/ConfirmDeleteChats";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  input: {
+    color: "white",
+  },
+});
 
 type chat = {
   id: number;
@@ -18,6 +25,8 @@ type chat = {
 };
 
 export default function Chat() {
+  const classes = useStyles();
+
   const [showLogin, setShowLogin] = useState(false);
   const [loading, setLoading] = useState(true);
   const [chats, setChats] = useState<chat[]>([]);
@@ -66,7 +75,7 @@ export default function Chat() {
   return (
     <div>
       <Header />
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-[#011627]">
         <div className="text-3xl bg-gray-400 p-4 mb-4 flex justify-between">
           <p>Self</p>
           <div className="">
@@ -113,7 +122,7 @@ export default function Chat() {
                 </div>
               ))
             ) : (
-              <div className="text-gray-500 text-5xl flex justify-center items-center">
+              <div className="text-white text-5xl flex justify-center items-center">
                 No chats found
               </div>
             )}
@@ -130,6 +139,8 @@ export default function Chat() {
               value={text}
               onChange={(e) => setText(e.target.value)}
               variant="outlined"
+              className="text-white"
+              inputProps={{ className: classes.input }}
               placeholder="Type a message..."
               fullWidth
             />
@@ -139,7 +150,7 @@ export default function Chat() {
                 variant="contained"
                 fullWidth
                 disabled={text.length === 0}
-                style={{ backgroundColor: "#FF0000", color: "#FFFFFF" }}
+                style={{ backgroundColor: "#FF3366", color: "#FFFFFF" }}
               >
                 <i className="fa fa-paper-plane"></i>&nbsp;Send
               </Button>

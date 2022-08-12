@@ -4,6 +4,7 @@ import Chat from "../Components/Chat";
 import Home from "../Components/Home";
 import Login from "../Components/User/Login";
 import Signup from "../Components/User/Signup";
+import UserCount from "../Components/UserCount";
 
 const routes = {
   "/": () => <Home />,
@@ -11,6 +12,7 @@ const routes = {
   "/chat": () => <Chat />,
   "/login": () => <Login />,
   "/signup": () => <Signup />,
+  "/count": () => <UserCount />,
 };
 
 export default function AppRouter() {

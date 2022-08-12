@@ -3,7 +3,7 @@ import { Link } from "raviger";
 export default function Footer() {
   return (
     <div className="bg-[#FF3366] text-[#011627]">
-      <div className="p-2">
+      <div className="p-4">
         <div className="flex">
           <p className="text-3xl w-full">The Gladden Project</p>
           <div className="w-full flex justify-end gap-2 text-2xl">
@@ -21,8 +21,13 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex justify-center items-center hover:font-bold hover:underline">
-          <Link href="/about">About us</Link>
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center hover:font-bold hover:underline">
+            <Link href="/chat">Talk</Link>
+          </div>
+          <div className=" hover:font-bold hover:underline">
+            <Link href="/about">About us</Link>
+          </div>
         </div>
       </div>
     </div>
