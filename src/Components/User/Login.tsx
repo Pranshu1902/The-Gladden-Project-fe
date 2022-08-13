@@ -45,8 +45,8 @@ export default function Login() {
   return (
     <div>
       <Header />
-      <div className="text-gray-500 min-h-screen">
-        <p className="text-7xl font-bold flex justify-center pt-4 text-black">
+      <div className="text-[#FF3366] bg-[#011627] min-h-screen">
+        <p className="text-7xl font-bold flex justify-center pt-4 text-[#2EC4B6]">
           Login
         </p>
         <form
@@ -85,7 +85,7 @@ export default function Login() {
                 className="cursor-pointer"
                 fullWidth
                 type="submit"
-                style={{ backgroundColor: "#FF0000", color: "#FFFFFF" }}
+                style={{ backgroundColor: "#2EC4B6", color: "#FFFFFF" }}
               >
                 Login
               </Button>
@@ -93,7 +93,7 @@ export default function Login() {
           </div>
         </form>
         <p className="flex justify-center items-center">
-          New user?{" "}
+          New user? &nbsp;
           <Link href="/signup" className="text-blue-500 hover:text-blue-700">
             Signup
           </Link>

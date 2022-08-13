@@ -5,7 +5,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 import { signup } from "../../api/ApiUtils";
-import { navigate } from "raviger";
+import { Link, navigate } from "raviger";
 
 export default function Signup() {
   const [username, setUsername] = useState("");
@@ -47,8 +47,8 @@ export default function Signup() {
   return (
     <div>
       <Header />
-      <div className="text-gray-500 min-h-screen">
-        <p className="text-7xl font-bold flex justify-center pt-4 text-black">
+      <div className="text-[#FF3366] bg-[#011627] min-h-screen">
+        <p className="text-7xl font-bold flex justify-center pt-4 text-[#2EC4B6]">
           Sign Up
         </p>
         <form
@@ -94,13 +94,19 @@ export default function Signup() {
                 className="cursor-pointer"
                 fullWidth
                 type="submit"
-                style={{ backgroundColor: "#FF0000", color: "#FFFFFF" }}
+                style={{ backgroundColor: "#2EC4B6", color: "#FFFFFF" }}
               >
                 Sign up
               </Button>
             )}
           </div>
         </form>
+        <p className="flex justify-center items-center">
+          Already have an account? &nbsp;
+          <Link href="/login" className="text-blue-500 hover:text-blue-700">
+            Login
+          </Link>
+        </p>
       </div>
       <Footer />
     </div>
