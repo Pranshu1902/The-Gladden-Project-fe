@@ -30,6 +30,17 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center items-center">
+        Made with &nbsp;<i className="fa fa-heart"></i>&nbsp; by&nbsp;
+        <a
+          href="https://pranshu1902.netlify.app"
+          target={"_blank"}
+          rel={"noreferrer"}
+          className="hover:text-[#66fcf1] hover:font-bold transition duration-300 underline"
+        >
+          Pranshu
+        </a>
+      </div>
     </div>
   );
 }

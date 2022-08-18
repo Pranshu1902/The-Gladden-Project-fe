@@ -50,7 +50,15 @@ export default function About() {
                   </a>
                 </div>
                 <p className="text-xl">
-                  Pranshu is the founder and CEO of{" "}
+                  <a
+                    href="https://pranshu1902.netlify.app"
+                    target={"_blank"}
+                    ref={"noreferrer"}
+                    className="text-5xl hover:text-[#66fcf1] hover:font-bold transition duration-300 underline"
+                  >
+                    Pranshu
+                  </a>
+                  &nbsp;is the founder and CEO of{" "}
                   <Link className="text-[#2EC4B6] hover:underline" href="/">
                     {" "}
                     The Gladden Project
