@@ -53,7 +53,7 @@ export default function About() {
                   <a
                     href="https://pranshu1902.netlify.app"
                     target={"_blank"}
-                    ref={"noreferrer"}
+                    rel={"noreferrer"}
                     className="text-5xl hover:text-[#66fcf1] hover:font-bold transition duration-300 underline"
                   >
                     Pranshu
