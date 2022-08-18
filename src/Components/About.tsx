@@ -49,12 +49,12 @@ export default function About() {
                     <i className="fa-brands fa-linkedin hover:animate-pulse hover:scale-110 transition duration-300"></i>
                   </a>
                 </div>
-                <p className="text-xl">
+                <p className="text-xl pt-4">
                   <a
                     href="https://pranshu1902.netlify.app"
                     target={"_blank"}
                     rel={"noreferrer"}
-                    className="text-5xl hover:text-[#66fcf1] hover:font-bold transition duration-300 underline"
+                    className="text-[#66fcf1] transition duration-300 hover:underline"
                   >
                     Pranshu
                   </a>
