@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="text-[#FF3366] bg-[#011627] min-h-screen flex flex-col gap-6 text-3xl md:text-5xl">
-        <div className="p-8 md:p-16">
+      <div className="text-[#FF3366] bg-[#011627] min-h-screen text-3xl md:text-5xl">
+        <div className="p-8 md:p-16 flex flex-col gap-24 md:gap-36">
           <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
             <div className="md:w-1/2">
               <img src={socialMedia} width={400} alt="" />
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 p-6 mt-12 text-3xl justify-center items-center">
+          <div className="flex flex-col gap-2 mt-12 text-3xl justify-center items-center">
             <div>Want personalized help to get out of this rat hole?</div>
             <div className="w-full md:w-auto">
               <Button
