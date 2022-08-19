@@ -9,12 +9,16 @@ export default function Footer() {
           <div className="w-full flex justify-end gap-2 text-2xl">
             <a
               href="https://twitter.com/ProjectGladden"
+              target="_blank"
+              rel="noreferrer"
               className="hover:scale-110"
             >
               <i className="fa-brands fa-twitter hover:text-[#2EC4B6] transition duration-300"></i>
             </a>
             <a
               href="mailto:thegladdenproject@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               className="hover:scale-110"
             >
               <i className="fa fa-envelope hover:text-[#2EC4B6] transition duration-300"></i>
