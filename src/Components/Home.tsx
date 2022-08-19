@@ -3,6 +3,11 @@ import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 import socialMedia from "../Images/socialMedia.png";
 import notification from "../Images/notification.png";
+import voice from "../Images/voice.png";
+import insta from "../Images/insta.png";
+import algo from "../Images/algo.png";
+import { Button } from "@mui/material";
+import { navigate } from "raviger";
 
 export default function Home() {
   useEffect(() => {
@@ -14,42 +19,77 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="text-[#FF3366] bg-[#011627] min-h-screen">
-        <div className="flex flex-col md:flex-row gap-8 justify-center w-full p-16">
-          <div className="md:w-1/2">
-            <img src={socialMedia} width={400} alt="" />
+      <div className="text-[#FF3366] bg-[#011627] min-h-screen flex flex-col gap-6 text-3xl md:text-5xl">
+        <div className="p-8 md:p-16">
+          <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
+            <div className="md:w-1/2">
+              <img src={socialMedia} width={400} alt="" />
+            </div>
+            <div className="md:w-1/3 flex justify-start items-center">
+              <p>Is the voice inside your head really yours?</p>
+            </div>
           </div>
-          <div className="md:w-1/3 flex justify-start items-center">
-            <p className="text-5xl">
-              Is the voice inside your head really yours?
-            </p>
-          </div>
-        </div>
 
-        <div className="flex flex-col md:flex-row-reverse gap-8 justify-center w-full p-16">
-          <div className="md:w-1/2 flex justify-end">
-            <img src={notification} width={400} alt="" />
+          <div className="flex flex-col md:flex-row-reverse gap-8 justify-center w-full">
+            <div className="md:w-1/2 flex justify-end">
+              <img src={notification} width={400} alt="" />
+            </div>
+            <div className="md:w-1/3 flex justify-start items-center text-[#2EC4B6]">
+              <p>
+                Are the comments of strangers on the internet bothering you?
+              </p>
+            </div>
           </div>
-          <div className="md:w-1/3 flex justify-start items-center text-[#2EC4B6]">
-            <p className="text-5xl">
-              Are the comments of strangers on the internet controlling you?
-            </p>
-          </div>
-        </div>
 
-        <div className="flex flex-col gap-12 p-6 mt-12 text-3xl justify-center items-center">
-          <div>
-            We feel like all these thoughts in our mind are ours but actually it
-            is the hidden control of these people on the internet.
+          <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
+            <div className="md:w-1/2">
+              <img src={voice} width={400} alt="" />
+            </div>
+            <div className="md:w-1/3 flex justify-start items-center">
+              <p>
+                Or is it the hidden control of these people on the internet?
+              </p>
+            </div>
           </div>
-          <div>
-            Watching other people's instagram pictures makes us naturally wonder
-            why our life is so messed up whereas in reality, the person that you
-            think has teh best life may not really be that happy with his life.
+
+          <div className="flex flex-col md:flex-row-reverse gap-8 justify-center w-full">
+            <div className="md:w-1/2 flex justify-end">
+              <img src={insta} width={400} alt="" />
+            </div>
+            <div className="md:w-1/3 flex justify-start items-center text-[#2EC4B6]">
+              <p className="">
+                Does instagram makes you wonder why your life is so messed up
+                compared to others?
+              </p>
+            </div>
           </div>
-          <div>
-            These platforms have made algorithms to keep us online and ruin our
-            lives while they make money out of it.
+
+          <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
+            <div className="md:w-1/2">
+              <img src={algo} width={400} alt="" />
+            </div>
+            <div className="md:w-1/3 flex justify-start items-center">
+              <p>
+                These platforms use algorithms to keep us online longer while
+                they make money.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2 p-6 mt-12 text-3xl justify-center items-center">
+            <div>Want personalized help to get out of this rat hole?</div>
+            <div className="w-full md:w-auto">
+              <Button
+                variant="outlined"
+                fullWidth
+                style={{ backgroundColor: "#2EC4B6", color: "white" }}
+                onClick={() => {
+                  navigate("/chat");
+                }}
+              >
+                Talk to us
+              </Button>
+            </div>
           </div>
         </div>
       </div>
