@@ -4,8 +4,8 @@ import logo from "../Images/logo.png";
 
 export default function Header() {
   return (
-    <div className="flex bg-[#FF3366] text-[#011627] justify-between p-2">
-      <div className="flex items-center">
+    <div className="flex bg-[#FF3366] text-[#011627] justify-between p-2 flex-col sm:flex-row gap-2">
+      <div className="flex items-center justify-center">
         <Link href="/">
           <img src={logo} alt="logo" width={"80"} />
         </Link>
