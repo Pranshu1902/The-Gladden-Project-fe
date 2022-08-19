@@ -102,7 +102,7 @@ export default function Chat() {
                 <div className="p-4 text-gray-700 w-full relative">
                   {chat.type === "sent" ? (
                     <div className="">
-                      <div className="bg-yellow-100 flex flex-row justify-end items-end p-2 rounded-tl-lg w-fit right-4 inset-y-0 absolute">
+                      <div className="bg-yellow-100 flex flex-row justify-end items-end p-2 rounded-lg w-fit right-4 inset-y-0 absolute">
                         <div>{chat.text}</div>
                         <div className="flex justify-end items-end pt-2 pl-2 bottom-2 right-2 text-sm text-gray-500">
                           {moment(chat.date).format("hh:mm")}
