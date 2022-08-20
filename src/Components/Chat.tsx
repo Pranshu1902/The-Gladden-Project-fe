@@ -76,8 +76,8 @@ export default function Chat() {
     <div>
       <Header />
       <div className="min-h-screen bg-[#011627]">
-        <div className="text-3xl bg-gray-400 p-4 mb-4 flex justify-between">
-          <p>Self</p>
+        <div className="text-3xl p-4 mb-4 flex justify-between">
+          <p className="text-[#2EC4B6] font-bold">Self</p>
           <div className="">
             <Button
               variant="outlined"
@@ -111,7 +111,7 @@ export default function Chat() {
                     </div>
                   ) : (
                     <div>
-                      <div className="bg-green-100 flex flex-row justify-start p-2 rounded-tr-lg w-fit">
+                      <div className="bg-green-100 flex flex-row justify-start p-2 rounded-lg w-fit">
                         <div>{chat.text}</div>
                         <div className="flex justify-end items-end pt-2 pl-2 bottom-2 right-2 text-sm text-gray-500">
                           {moment(chat.date).format("hh:mm")}
@@ -139,6 +139,7 @@ export default function Chat() {
               value={text}
               onChange={(e) => setText(e.target.value)}
               variant="outlined"
+              color="secondary"
               className="text-white"
               inputProps={{ className: classes.input }}
               placeholder="Type a message..."
@@ -150,7 +151,7 @@ export default function Chat() {
                 variant="contained"
                 fullWidth
                 disabled={text.length === 0}
-                style={{ backgroundColor: "#FF3366", color: "#FFFFFF" }}
+                style={{ backgroundColor: "#2EC4B6", color: "#FFFFFF" }}
               >
                 <i className="fa fa-paper-plane"></i>&nbsp;Send
               </Button>
