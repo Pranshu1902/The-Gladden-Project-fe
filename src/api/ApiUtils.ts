@@ -47,6 +47,23 @@ const request: any = async (
   }
 };
 
+export const me = async () => {
+  return request("GET", {}, "users/");
+};
+
+export const updateUser = async (
+  username: string,
+  password: string,
+  userId: number
+) => {
+  const data = {
+    username: username,
+    password: password,
+    id: userId.toString(),
+  };
+  return request("PUT", data, `user/${userId.toString()}/`);
+};
+
 export const getUsersCount = async () => {
   return request("GET", {}, "user/");
 };

@@ -15,6 +15,9 @@ export default function Footer() {
             <div className=" hover:font-bold hover:underline">
               <Link href="/about">About us</Link>
             </div>
+            <div className=" hover:font-bold hover:underline">
+              <Link href="/profile">Profile</Link>
+            </div>
           </div>
           <div className="w-full flex justify-end gap-2 text-2xl">
             <a

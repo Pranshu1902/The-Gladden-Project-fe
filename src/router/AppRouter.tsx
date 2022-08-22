@@ -2,6 +2,7 @@ import { useRoutes } from "raviger";
 import About from "../Components/About";
 import Chat from "../Components/Chat";
 import Home from "../Components/Home";
+import Profile from "../Components/Profile";
 import Login from "../Components/User/Login";
 import Signup from "../Components/User/Signup";
 import UserCount from "../Components/UserCount";
@@ -12,6 +13,7 @@ const routes = {
   "/chat": () => <Chat />,
   "/login": () => <Login />,
   "/signup": () => <Signup />,
+  "/profile": () => <Profile />,
   "/count": () => <UserCount />,
 };
 
