@@ -4,7 +4,6 @@ import { me, updateUser } from "../api/ApiUtils";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 import { makeStyles } from "@material-ui/core/styles";
-import { Message, SetMeal } from "@mui/icons-material";
 import { Box } from "@mui/system";
 
 const useStyles = makeStyles({
