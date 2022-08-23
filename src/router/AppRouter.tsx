@@ -3,6 +3,7 @@ import About from "../Components/About";
 import Chat from "../Components/Chat";
 import Home from "../Components/Home";
 import Profile from "../Components/Profile";
+import TruthAboutSocialMedia from "../Components/TruthAboutSocialMedia";
 import Login from "../Components/User/Login";
 import Signup from "../Components/User/Signup";
 import UserCount from "../Components/UserCount";
@@ -14,6 +15,7 @@ const routes = {
   "/login": () => <Login />,
   "/signup": () => <Signup />,
   "/profile": () => <Profile />,
+  "/social-media": () => <TruthAboutSocialMedia />,
   "/count": () => <UserCount />,
 };
 
