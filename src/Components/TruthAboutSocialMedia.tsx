@@ -22,8 +22,8 @@ export default function TruthAboutSocialMedia() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center items-center p-4 md:p-16">
-          <p className="w-full md:w-1/2 text-2xl flex justify-center">
+        <div className="flex flex-col-reverse md:flex-row gap-4 justify-center items-center p-4 md:p-16">
+          <p className="w-full md:w-1/2 text-[#2EC4B6] text-2xl flex justify-center">
             These platforms use your attention to sell ads and make billions!
             The more we scroll, the more ad content comes in our feed and more
             the advertisers pay for it.
@@ -45,9 +45,9 @@ export default function TruthAboutSocialMedia() {
           </p>
         </div>
 
-        <div className="flex justify-center p-6">
+        <div className="flex justify-center p-6 pb-6">
           <div className="flex justify-center text-2xl bg-[#190662] p-2 rounded-lg shadow w-full md:w-1/2">
-            <p className="text-[#]">
+            <p>
               If you are not paying for the product then you are the product.
             </p>
           </div>
