@@ -10,13 +10,19 @@ export default function Footer() {
           </p>
           <div className="flex flex-col justify-center items-center w-1/2">
             <div className="flex justify-center items-center hover:font-bold hover:underline">
+              <Link href="/social-media">The Truth about Social Media</Link>
+            </div>
+            <div className=" hover:font-bold hover:underline">
+              <Link href="/profile">Profile</Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center w-1/2">
+            <div className="flex justify-center items-center hover:font-bold hover:underline">
               <Link href="/chat">Talk</Link>
             </div>
             <div className=" hover:font-bold hover:underline">
               <Link href="/about">About us</Link>
-            </div>
-            <div className=" hover:font-bold hover:underline">
-              <Link href="/profile">Profile</Link>
             </div>
           </div>
           <div className="w-full flex justify-end gap-2 text-2xl">
